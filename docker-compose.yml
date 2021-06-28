@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  migagajs-development:
+    container_name: migagajs-development
+    image: node:latest
+    working_dir: /app
+    command: "tail -f /dev/null"
+    volumes:
+      - ./:/app
