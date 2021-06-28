@@ -1,0 +1,3 @@
+[submodule "migaga-protobuf"]
+	path = migaga-protobuf
+	url = https://github.com/LewisHobden/migaga-protobuf
