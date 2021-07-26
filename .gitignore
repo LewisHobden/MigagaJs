@@ -105,3 +105,6 @@ dist
 
 # Configuration
 config.json
+
+# Protobuf Files.
+src/model/protobuf-models-compiled.d.ts

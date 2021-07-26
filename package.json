@@ -7,7 +7,7 @@
   "author": "Lewis Hobden",
   "license": "MIT",
   "scripts": {
-    "protobuf": "protoc --js_out=import_style=commonjs,binary:./src/model ./migaga-protobuf/server_logs.proto"
+    "protobuf": "pbjs -t static-module -w commonjs -o ./src/model/compiled.js migaga-protobuf/server_logs.proto && pbts -o ./src/model/protobuf-models-compiled.d.ts ./src/model/compiled.js && rm ./src/model/compiled.js"
   },
   "dependencies": {
     "bufferutil": "^4.0.3",
@@ -15,6 +15,7 @@
     "google-protobuf": "^3.17.3",
     "install": "^0.13.0",
     "npm": "^7.19.1",
+    "protobufjs": "^6.11.2",
     "typescript": "^4.3.4",
     "utf-8-validate": "^5.0.5"
   },
